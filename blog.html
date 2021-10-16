@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>P-Blog!</title>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <span><img src="img/logo.png" width="43px" alt=""></span>
+            <span>P-Blog!</span>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">Write</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+        <div class="nav-right">
+            <form action="search.html" method="GET">
+                <input class="form-input" type="text" name="query" placeholder="Article Search">
+                <button class="btn">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+
+    <div class="content max-width-1 m-auto my-2">
+        <div class="content-left">
+            <h1>Write a Blog</h1>
+            <div class="contact-form">
+                <div class="form-box">
+                    <h3>Add Title</h3>
+                    <input type="text" id="addTitle" placeholder="Eg. 'In depth with Coding'">
+                </div>
+                <div class="form-box">
+                    <h3>Add Content</h3>
+                    <textarea name="" id="addTxt" cols="30" rows="10" placeholder=""></textarea>
+                </div>
+                <div class="form-box">
+                    <button class="btn" id="addBtn">Add Blog</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+
+    <div class="home-articles max-width-1 m-auto font2">
+        <h2>Your Blog</h2>
+
+        <div class="home-article">
+            <div class="home-article-content font1">
+                <div id="blog" class="row container-fluid"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copywrite &copy; P-Blog.com</p>
+        <a href="https://www.vecteezy.com/free-vector/typing">Vector Credits: Vecteezy</a>
+    </div>
+</body>
+<script src="./js/blog.js"></script>
+
+</html>

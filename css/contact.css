@@ -1,0 +1,45 @@
+.contact-content {
+  height: 103vh;
+  background-color: rgb(241, 241, 252, 0.5);
+  margin-top: 32px;
+  padding: 3px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.contact-content::after {
+  content: "";
+  top: 0;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+.alert-success {
+  padding: 20px;
+  background-color: #41b841;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert-danger {
+  padding: 20px;
+  background-color: #ec5045;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
